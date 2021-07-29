@@ -1,0 +1,12 @@
+---
+
+
+- hosts: 203.199.244.18
+
+
+  tasks:
+  - name: Run 'show interfaces'
+    ios_command:
+      commands:
+        - show interfaces
+    register: output
